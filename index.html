@@ -1,9 +1,111 @@
-<p> Difficile : Un réseau social où les férus d'escalade pourraient noter les voies qu'ils grimpent, et sociabiliser grâce à ceci</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Asap|Encode+Sans+Condensed" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>UI Kit</title>
+</head>
+<body>  
 
-Les couleurs
-La typographie
-Les boutons
-L'iconographie
-Des inputs de formulaires
-Des cartes
-Des liste
+  <div id="mySidenav" class="sidenav primary light">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Les Couleurs</a>
+    <a href="#">Polices</a>
+    <a href="#">Bouttons</a>
+    <a href="#">Navbar</a>
+    <a href="#">Listes</a>
+  </div>
+  
+  <!-- Use any element to open the sidenav -->
+
+  
+  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+  <div id="main">
+      <a class="btn btn-round default" onclick="openNav()"><i class="fas fa-eye"></i></a>
+    <h1>Les couleurs</h1>
+    <h5 class="primary light">Ceci est la couleur principale.</h5>
+    <h5 class="secondary text-primary">Ceci est la couleur secondaire.</h5>
+    <p class="dark">Ceci est un gris foncé.</p>
+    <p class="medium-light">Ceci est un gris medium.</p>
+    <p class="light">Ceci est un gris clair.</p>
+
+    <hr>
+    
+    <h1>Les polices</h1>
+    <h1>Ceci est un header 1.</h1>
+    <h2>Ceci est un header 2.</h2>
+    <h3>Ceci est un header 3.</h3>
+    <h4>Ceci est un header 4.</h4>
+    <h5>Ceci est un header 5.</h5>
+    <h6>Ceci est un header 6.</h6>
+    <p>Ceci est un test pour un paragraphe.</p>
+    <lead>Ceci est un paragraphe auquel nous devons prêter plus attention.</lead>
+    <blockquote>Ceci est une citation d'un écrivain connu.</blockquote>
+
+    <hr>
+
+    <h1>Les alertes</h1>
+    <div class="alert success">Ceci est une alerte success</div>
+    <div class="alert warning">Ceci est une alerte warning</div>
+    <div class="alert danger">Ceci est une alerte danger</div>
+    <div class="alert info">Ceci est une alerte info</div>
+
+    <hr>
+
+    <h1>Les bouttons</h1>
+    <a class="btn btn-sm primary light" href="#">Small</a> 
+    <a class="btn primary light" href="#">Regular</a>
+    <a class="btn btn-lg primary light" href="#">Big Button</a><br/><br/><br/>
+
+    <a class="btn btn-primary-outline" href="#">Primary</a> 
+    <a class="btn btn-secondary-outline" href="#">Secondary</a> 
+    <a class="btn btn-danger-outline" href="#">Danger</a> 
+    <a class="btn btn-warning-outline" href="#">Warning</a> 
+    <a class="btn btn-success-outline" href="#">Success</a> 
+    <a class="btn btn-default-outline" href="#">Default</a> 
+  
+    <br/><br/><br/>
+
+    <a class="btn btn-round secondary light" href="#"><i class="fas fa-heart"></i></a>
+    <a class="btn btn-round danger light" href="#"><i class="fas fa-trash-alt"></i></a>
+    <a class="btn btn-round primary light" href="#"><i class="fas fa-eye"></i></a><br/><br/>
+
+    <hr>
+
+    <ul class="navigation primary">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    
+    <br/>  <br/>  
+
+    <ul class="navigation secondary dark">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+  </div>
+
+<script>
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "15%";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+</script>
+</body>
+</html>

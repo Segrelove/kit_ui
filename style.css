@@ -1,0 +1,318 @@
+/*************************/
+/* SUPER SIDE NAV */
+/*************************/
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  font-family: 'Encode Sans Condensed', sans-serif;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 15px;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #CDD7D6;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/************************/
+/*      FLEXBOX NAVBAR  */
+/************************/
+
+.navigation {
+  list-style: none;
+  margin: 0; 
+  
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-end;
+  font-family: 'Asap', sans-serif;  
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: #FFFFFF;
+}
+
+.navigation a:hover {
+  background: darken(deepskyblue, 2%);
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    -webkit-flex-flow: column wrap;
+    flex-flow: column wrap;
+    padding: 0;
+  }
+  
+  .navigation a { 
+    text-align: center; 
+    padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.3); 
+    border-bottom: 1px solid rgba(0,0,0,0.1); 
+  }
+
+  
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+/************************/
+/* 	    COULEURS        */
+/************************/
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+.primary {
+	background-color: #102542;
+}
+
+.secondary {
+  background-color : #F87060;
+}
+
+.dark {
+  color : #313335;
+}
+
+.medium-light {
+  color : #B3A394;
+}
+
+.light{
+  color : #CDD7D6;
+}
+
+.text-primary {
+  color: #102542;	
+}
+
+.alert {
+  padding: 10px;
+  text-align: center;
+  font-size: 0.9em;
+  font-family: 'Asap', sans-serif;
+}
+
+.alert:hover {
+  -webkit-filter: opacity(95%); /* Safari */
+  filter: opacity(95%);
+}
+
+.success {
+  background-color: #5CFB54; 
+}
+
+.danger {
+  background-color: #E41C3C;
+}
+
+.info {
+  background-color: #0CB4D4;
+}
+
+.warning {
+  background-color: #FAA806;
+}
+
+
+
+/* LES TAGS TYPOS */
+/* LES TAGS TYPOS */
+/* LES TAGS TYPOS */
+
+h1 {
+  font-family: 'Encode Sans Condensed', sans-serif;
+  font-size : 3em;
+}
+
+h2 {
+  font-family: 'Encode Sans Condensed', sans-serif;
+  font-size : 2.7em;
+}
+
+h3 {
+  font-family: 'Encode Sans Condensed', sans-serif;
+  font-size : 2.5em;
+}
+
+h4 {
+  font-family: 'Encode Sans Condensed', sans-serif;
+  font-size : 2.2em;
+}
+
+h5 {
+  font-family: 'Encode Sans Condensed', sans-serif;
+  font-size : 1.9em;
+}
+
+h6 {
+  font-family: 'Encode Sans Condensed', sans-serif;
+  font-size : 1.5em;
+}
+
+p {
+  font-family: 'Asap', sans-serif;
+  color : #313335;
+}
+
+lead {
+  font-family: 'Asap', sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  font-weight: 700;
+}
+
+blockquote {
+  font-family: 'Asap', sans-serif;
+  font-size: 1.2em;
+  font-style: italic;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  word-spacing: 5px;
+  font-weight: 200;
+}
+
+/* LA GUERRE DES BOUTONS */
+/* LA GUERRE DES BOUTONS */
+/* LA GUERRE DES BOUTONS */
+
+.btn {
+  font-size: 1.1em; 
+  line-height: 14px; 
+  padding: 10px; 
+  border-radius: 2px; 
+  font-family: 'Asap', sans-serif; 
+  font-weight: 500; 
+  text-decoration: none; 
+  font-style: normal; 
+  font-variant: normal; 
+  text-transform: none; 
+}
+.btn:hover {
+  -webkit-filter: opacity(95%); /* Safari */
+  filter: opacity(95%);
+}
+
+.btn-sm {
+  font-size: 0.9em; 
+  line-height: 14px; 
+  padding: 5px; 
+  border-radius: 2px; 
+  font-family: 'Asap', sans-serif; 
+  font-weight: 500; 
+  text-decoration: none; 
+  font-style: normal; 
+  font-variant: normal; 
+  text-transform: none; 
+}
+
+.btn-lg {
+  font-size: 1.6em; 
+  line-height: 14px; 
+  padding: 10px; 
+  border-radius: 2px; 
+  font-family: 'Asap', sans-serif; 
+  font-weight: 500; 
+  text-decoration: none; 
+  font-style: normal; 
+  font-variant: normal; 
+  text-transform: none; 
+}
+
+.btn-round {
+  padding: 15px;
+  border-radius: 50%; 
+}
+
+.btn-primary-outline {
+  outline: 1px solid #102542;
+  outline-offset: 0px;
+  color: #102542;
+}
+
+.btn-secondary-outline {
+  outline: 1px solid #F87060;
+  outline-offset: 0px;
+  color: #F87060;
+}
+
+.btn-danger-outline {
+  outline: 1px solid #E41C3C;
+  outline-offset: 0px;
+  color: #E41C3C;
+}
+
+.btn-warning-outline {
+  outline: 1px solid #FAA806;
+  outline-offset: 0px;
+  color: #FAA806;
+}
+
+.btn-success-outline {
+  outline: 1px solid #5CFB54;
+  outline-offset: 0px;
+  color: #5CFB54;
+}
+
+.btn-default-outline {
+  outline: 1px none;
+  outline-offset: 0px;
+  color: #102542;
+}
