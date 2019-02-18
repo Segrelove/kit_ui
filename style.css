@@ -1,3 +1,13 @@
+/**************************/
+/* STICKY EYE FOR SIDENAV */
+/**************************/
+
+#sticky {
+  position: fixed;
+  top: 0;
+  margin-left: 0:
+}
+
 /*************************/
 /* SUPER SIDE NAV */
 /*************************/
@@ -16,11 +26,16 @@
   font-family: 'Encode Sans Condensed', sans-serif;
 }
 
+.sidenav hr {
+  border-top: 1px solid #FFF;
+  border-bottom: 0px;
+}
+
 /* The navigation menu links */
 .sidenav a {
   padding: 8px 8px 8px 15px;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1em;
   color: #CDD7D6;
   display: block;
   transition: 0.3s;
@@ -43,7 +58,8 @@
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left .5s;
-  padding: 20px;
+  margin: 0;
+  padding-left: 14%;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -113,10 +129,10 @@
 /* 	    COULEURS        */
 /************************/
 
-html, body {
+/* html, body {
   margin: 0;
   height: 100%;
-}
+} */
 
 .primary {
 	background-color: #102542;

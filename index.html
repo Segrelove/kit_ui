@@ -13,20 +13,24 @@
 
   <div id="mySidenav" class="sidenav primary light">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">Les Couleurs</a>
-    <a href="#">Polices</a>
-    <a href="#">Bouttons</a>
-    <a href="#">Navbar</a>
-    <a href="#">Listes</a>
+    <a href="#color">Les Couleurs</a>
+    <hr>
+    <a href="#police">Polices</a>
+    <hr>
+    <a href="#button">Bouttons</a>
+    <hr>
+    <a href="#alert">Alertes</a>
+    <hr>
+    <a href="#navigation">Navbar</a>
   </div>
   
   <!-- Use any element to open the sidenav -->
 
   
   <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+  <a id="sticky" class="btn btn-round default" onclick="openNav()"><i class="fas fa-arrow-right"></i></a>
   <div id="main">
-      <a class="btn btn-round default" onclick="openNav()"><i class="fas fa-eye"></i></a>
-    <h1>Les couleurs</h1>
+    <h1 id="color">Les couleurs</h1>
     <h5 class="primary light">Ceci est la couleur principale.</h5>
     <h5 class="secondary text-primary">Ceci est la couleur secondaire.</h5>
     <p class="dark">Ceci est un gris foncé.</p>
@@ -35,7 +39,7 @@
 
     <hr>
     
-    <h1>Les polices</h1>
+    <h1 id="police">Les polices</h1>
     <h1>Ceci est un header 1.</h1>
     <h2>Ceci est un header 2.</h2>
     <h3>Ceci est un header 3.</h3>
@@ -48,7 +52,7 @@
 
     <hr>
 
-    <h1>Les alertes</h1>
+    <h1 id="alert">Les alertes</h1>
     <div class="alert success">Ceci est une alerte success</div>
     <div class="alert warning">Ceci est une alerte warning</div>
     <div class="alert danger">Ceci est une alerte danger</div>
@@ -56,7 +60,7 @@
 
     <hr>
 
-    <h1>Les bouttons</h1>
+    <h1 id="button">Les bouttons</h1>
     <a class="btn btn-sm primary light" href="#">Small</a> 
     <a class="btn primary light" href="#">Regular</a>
     <a class="btn btn-lg primary light" href="#">Big Button</a><br/><br/><br/>
@@ -74,9 +78,9 @@
     <a class="btn btn-round danger light" href="#"><i class="fas fa-trash-alt"></i></a>
     <a class="btn btn-round primary light" href="#"><i class="fas fa-eye"></i></a><br/><br/>
 
-    <hr>
+    <hr>  
 
-    <ul class="navigation primary">
+    <ul id="navigation" class="navigation primary">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Products</a></li>
@@ -97,8 +101,8 @@
 <script>
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
 function openNav() {
-  document.getElementById("mySidenav").style.width = "15%";
-  document.getElementById("main").style.marginLeft = "250px";
+  document.getElementById("mySidenav").style.width = "12%";
+  document.getElementById("main").style.marginLeft = "0";
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
