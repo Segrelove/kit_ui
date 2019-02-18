@@ -24,6 +24,8 @@
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   font-family: 'Encode Sans Condensed', sans-serif;
+  text-decoration: none;
+  letter-spacing: 1.5px;
 }
 
 .sidenav hr {
@@ -65,7 +67,11 @@
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+  .sidenav a {font-size: 0.6em;}
+  .sidenav .closebtn {
+    font-size: 20px;
+    right: 5px;
+  }
 }
 
 /************************/
@@ -93,6 +99,9 @@
   display: block;
   padding: 1em;
   color: #FFFFFF;
+  text-decoration: none;
+  letter-spacing: 1.1px;
+  word-spacing: 5px;
 }
 
 .navigation a:hover {
@@ -129,10 +138,6 @@
 /* 	    COULEURS        */
 /************************/
 
-/* html, body {
-  margin: 0;
-  height: 100%;
-} */
 
 .primary {
 	background-color: #102542;
@@ -151,7 +156,7 @@
 }
 
 .light{
-  color : #CDD7D6;
+  color : #FFF;
 }
 
 .text-primary {
@@ -163,6 +168,12 @@
   text-align: center;
   font-size: 0.9em;
   font-family: 'Asap', sans-serif;
+  height: 30px;
+  line-height: 30px;
+  text-decoration: none;
+  letter-spacing: 1.1px;
+  word-spacing: 5px;
+  font-weight: 200;
 }
 
 .alert:hover {
@@ -260,7 +271,10 @@ blockquote {
   font-style: normal; 
   font-variant: normal; 
   text-transform: none; 
+  letter-spacing: 1.1px;
+  word-spacing: 5px;
 }
+
 .btn:hover {
   -webkit-filter: opacity(95%); /* Safari */
   filter: opacity(95%);
@@ -331,4 +345,57 @@ blockquote {
   outline: 1px none;
   outline-offset: 0px;
   color: #102542;
+}
+
+/**********************/
+/*     LES INPUTS !   */
+/**********************/
+
+.form {
+  width: 100%;
+  text-align: center;
+}
+
+.box-input {
+  display: block;
+  width: 25%;
+  padding: 10px;
+  /* margin: 2px; */
+  margin: auto;
+}
+
+input {
+  border: none;
+  width: 100%;
+  border-bottom: 1px solid #102542;
+  padding: 12px 12px;
+  margin: 8px 0;
+  font-family: 'Asap', sans-serif; 
+  font-size: 0.8em;
+}
+input:focus{
+  outline: none;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #aaa9a9;
+  opacity: 1; /* Firefox */
+  font-family: 'Asap', sans-serif; 
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #aaa9a9;
+  font-family: 'Asap', sans-serif; 
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #aaa9a9;
+  font-family: 'Asap', sans-serif; 
+}
+
+.box-area {
+  display: block;
+  width: 25%;
+  padding: 10px;
+  height: 100px;
+  margin: auto;
 }

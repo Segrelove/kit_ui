@@ -22,6 +22,8 @@
     <a href="#alert">Alertes</a>
     <hr>
     <a href="#navigation">Navbar</a>
+    <hr>
+    <a href="#input">Inputs</a>
   </div>
   
   <!-- Use any element to open the sidenav -->
@@ -53,17 +55,22 @@
     <hr>
 
     <h1 id="alert">Les alertes</h1>
-    <div class="alert success">Ceci est une alerte success</div>
-    <div class="alert warning">Ceci est une alerte warning</div>
+    <div class="alert success dark">Ceci est une alerte success</div>
+    <br/>
+    <div class="alert warning dark">Ceci est une alerte warning</div>
+    <br/>
     <div class="alert danger">Ceci est une alerte danger</div>
-    <div class="alert info">Ceci est une alerte info</div>
-
+    <br/>
+    <div class="alert info dark">Ceci est une alerte info</div>
+    <br/>
     <hr>
 
     <h1 id="button">Les bouttons</h1>
     <a class="btn btn-sm primary light" href="#">Small</a> 
     <a class="btn primary light" href="#">Regular</a>
-    <a class="btn btn-lg primary light" href="#">Big Button</a><br/><br/><br/>
+    <a class="btn btn-lg primary light" href="#">Big Button</a> 
+    
+    <br/><br/><br/>
 
     <a class="btn btn-primary-outline" href="#">Primary</a> 
     <a class="btn btn-secondary-outline" href="#">Secondary</a> 
@@ -72,15 +79,19 @@
     <a class="btn btn-success-outline" href="#">Success</a> 
     <a class="btn btn-default-outline" href="#">Default</a> 
   
-    <br/><br/><br/>
+    <br/> <br/> <br/>
 
     <a class="btn btn-round secondary light" href="#"><i class="fas fa-heart"></i></a>
     <a class="btn btn-round danger light" href="#"><i class="fas fa-trash-alt"></i></a>
     <a class="btn btn-round primary light" href="#"><i class="fas fa-eye"></i></a><br/><br/>
-
+    
+    <br/>
+    
     <hr>  
 
-    <ul id="navigation" class="navigation primary">
+    <br/>
+    <h1 id="navigation">Les NavBars</h1>
+    <ul class="navigation primary">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Products</a></li>
@@ -96,6 +107,32 @@
         <li><a href="#">Contact</a></li>
     </ul>
 
+    <br/>
+    
+    <hr>  
+
+    <br/>
+    <h1 id="input">Les Inputs</h1>
+    <div class="form">
+      <div class="box-input">
+        <lead>First Name<lead>
+        <input placeholder="Type here..."></input>
+      </div>
+
+      <div class="box-input">
+        <lead>Last Name<lead>
+        <input placeholder="Type here..."></input>
+      </div>
+      <div class="box-input">
+          <lead>Password<lead>
+          <input type="password" placeholder="Type here..."></input>
+        </div>
+      <div class="box-area">
+      <lead>Description<lead>
+          <input placeholder="Type here..."></input>
+      </div>
+      <button class="btn primary light" type="submit">Submit</button>
+    </div>
   </div>
 
 <script>
